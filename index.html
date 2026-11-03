@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora de edad con Luxon y datepicker externo.">
+    <meta name="keywords" content="calculadora, edad, Luxon">
+    <meta name="author" content="Nayrelis Rumbos">
+    <title>Calculadora de Edad</title>
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css"> <!--estetica del calenadario-->
+    
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <section class="caja">
+        <h1>Calculadora de Edad</h1>
+        <p>año-mes-día</p>
+        <input type="text" id="fechaNacimiento" placeholder="Elige tu fecha de nacimiento">
+        
+        <button id="calcular">Calcular Edad</button>
+        
+        <p id="resultado"></p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13"></script> <!--ayuda para q se vea bonito-->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.7.2/build/global/luxon.min.js"></script> <!--ca;cula la edad-->
+    
+    <script src="script.js"></script>
+</body>
+</html>
